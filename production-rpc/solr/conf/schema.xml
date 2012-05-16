@@ -903,7 +903,8 @@
    <field name="version" type="int" indexed="true" stored="true"/>
    <field name="title" type="text_general" indexed="true" stored="true"/>
    <field name="description" type="text_general" indexed="true" stored="true"/>
-   <field name="keywords" type="text_en_splitting" indexed="true" stored="true" multiValued="true"/>
+   <field name="subtitles" type="text_en_splitting" indexed="true" stored="false"/>
+   <field name="keywords" type="text_en_splitting" indexed="true" stored="false" multiValued="true"/>
    <field name="ka_url" type="string" indexed="true" stored="true"/>
 
    <!-- catchall field, containing all other searchable text fields (implemented
@@ -993,6 +994,7 @@
    <copyField source="description" dest="text"/>
    <copyField source="title" dest="text"/>
    <copyField source="keywords" dest="text"/>
+   <copyField source="subtitles" dest="text"/>
 	
    <!-- Above, multiple source fields are copied to the [text] field. 
 	  Another way to map multiple source fields to the same 
