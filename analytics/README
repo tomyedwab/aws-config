@@ -6,12 +6,13 @@ TODO(csilvers): turn this into a .sh script!
 
 Install instructions:
 
+# TODO(benkomalo): set up virtualenv first?
 1) On the ec2 machine, install the following package:
      $ sudo yum install postfix
      TODO(csilvers)
 
 2) Pip install the following packages:
-     TODO(csilvers)
+     pip install pymongo   # TODO(benkomalo): lock down specific version?
 
 3) On the ec2 machine, run
      $ hg clone http://khanacademy.kilnhg.com/Code/Website/analytics/stable analytics
