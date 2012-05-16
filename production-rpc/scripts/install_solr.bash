@@ -42,5 +42,5 @@ $SCRIPT_ROOT/update_solr.bash
 
 # Create a local user crontab
 echo "MAILTO=tom@khanacademy.org" > /tmp/crontab
-echo "0 * * * * * $SCRIPT_ROOT/cronic.bash $SCRIPT_ROOT/update_solr.bash" >> /tmp/crontab
+echo "0 * * * * $SCRIPT_ROOT/cronic.bash $SCRIPT_ROOT/update_solr.bash" >> /tmp/crontab
 crontab /tmp/crontab
