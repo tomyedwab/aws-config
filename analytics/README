@@ -2,6 +2,8 @@ This has files that are used on the ka-high-mem machine, that runs on ec2.
 All the system configuration files/etc -- everything that isn't
 checked into source control somewhere -- are installed here.
 
+TODO(csilvers): turn this into a .sh script!
+
 Install instructions:
 
 1) On the ec2 machine, install the following package:
